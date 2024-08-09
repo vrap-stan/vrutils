@@ -1,0 +1,15 @@
+node_modules
+scripts
+.env*
+_ENV
+public
+vrutils.config.json
+fetchUrls.json
+/img
+.DS_Store
+webpList.txt
+topSizeList.txt
+pages
+modules
+common
+optimizedStrings*.txt

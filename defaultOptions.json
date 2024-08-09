@@ -1,0 +1,124 @@
+{
+  "buildenv": {
+    "ENV_NAME": "DST_ENV",
+    "ENV_ORDER": [
+      "NEXT_PUBLIC_VRAP_ENV",
+      "NEXT_PUBLIC_ENVIRONMENT",
+      "NEXT_PUBLIC_VERCEL_ENV",
+      "NODE_ENV"
+    ],
+    "publicFileName": "ENV_PUBLIC",
+    "privateFileName": "ENV_SERVER",
+    "publicFileDirPath": "./scripts/client",
+    "publicImportDirPath": "../client",
+    "privateFileDirPath": "./scripts/server",
+    "searchThrough": [
+      ".env.local",
+      ".env"
+    ],
+    "createDirIfNotExist": true,
+    "devEnvs": [
+      "development",
+      "dev",
+      "d"
+    ],
+    "qaEnvs": [
+      "preview",
+      "test",
+      "qa"
+    ],
+    "prodEnvs": [
+      "prod",
+      "production",
+      "p"
+    ],
+    "initIgnorePrefix": "NULLABLE_",
+    "overrideSuffix": "_OVERRIDE",
+    "envIgnore": "@env-ignore",
+    "envIgnoreStart": "@env-ignore-start",
+    "envIgnoreEnd": "@env-ignore-end",
+    "speakOnEnvIgnore": true,
+    "transpileOutDir": "./_ENV"
+  },
+  "copystring": {
+    "searchThrough": [
+      "path_to_string",
+      "pathtostring",
+      ".env.local",
+      ".env"
+    ],
+    "searchFor": "PATH_TO_STRING"
+  },
+  "download": {
+    "url": null,
+    "outPath": null
+  },
+  "image": {
+    "src": "./img",
+    "dst": "./public",
+    "toWebp": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".gif"
+    ],
+    "webpListPath": "./webpList.txt",
+    "quality": 80,
+    "custom": {},
+    "showTopSize": 10,
+    "topSizeListPath": "./topSizeList.txt"
+  },
+  "compressLocale": {
+    "en": {
+      "directoryPaths": [
+        "pages",
+        "modules",
+        "common"
+      ],
+      "fileExtensions": [
+        ".ts",
+        ".tsx"
+      ],
+      "excludeOptimization": {
+        "suffix": [],
+        "prefix": []
+      },
+      "writeOptimizedStrings": "optimizedStrings-en.txt",
+      "verbose": true
+    },
+    "ko": {
+      "directoryPaths": [
+        "pages",
+        "modules",
+        "common"
+      ],
+      "fileExtensions": [
+        ".ts",
+        ".tsx"
+      ],
+      "excludeOptimization": {
+        "suffix": [],
+        "prefix": []
+      },
+      "writeOptimizedStrings": "optimizedStrings-ko.txt",
+      "verbose": true
+    },
+    "ja": {
+      "directoryPaths": [
+        "pages",
+        "modules",
+        "common"
+      ],
+      "fileExtensions": [
+        ".ts",
+        ".tsx"
+      ],
+      "excludeOptimization": {
+        "suffix": [],
+        "prefix": []
+      },
+      "writeOptimizedStrings": "optimizedStrings-ja.txt",
+      "verbose": true
+    }
+  }
+}

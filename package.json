@@ -1,0 +1,18 @@
+{
+  "name": "vrutils",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "vrutils": "./vrutils.js"
+  },
+  "scripts": {
+    "start": "node vrutils.js"
+  },
+  "author": "Stan",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.19.5",
+    "findup-sync": "^5.0.0",
+    "sharp": "^0.33.1"
+  }
+}
